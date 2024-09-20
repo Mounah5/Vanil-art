@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanil'art - Vente et Achat de Vanille</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Désactiver le clic droit
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Bloquer la touche Print Screen
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'PrintScreen') {
+                alert("La capture d'écran est désactivée sur ce site.");
+                e.preventDefault();
+            }
+        });
+
+        // Désactiver la fonction de copie via le clavier (Ctrl+C)
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+                alert("La copie est désactivée sur ce site.");
+                e.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Vanil'art</h1>
+        <p><strong>"La vanille, c'est l'or noir des gourmets, une épice rare qui enrichit chaque moment de douceur et de délicatesse."</strong></p>
+        <p><strong>Ce site est créé pour vendre des vanilles de qualité.</strong></p>
+</header>
+    </header>
+
+    <!-- Formulaire d'inscription -->
+    <section class="inscription-section">
+        <h2><strong>Inscrivez-vous</strong></h2>
+        <form action="#" method="post">
+            <label for="email"><strong>Votre adresse email :</strong></label><br>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required><br><br>
+            <button type="submit" class="submit-button">S'inscrire</button>
+        </form>
+    </section>
+
+    <!-- Formulaire de commande -->
+    <section class="commande-section">
+        <h2><strong>Passer une commande</strong></h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- Section pour le paiement Mvola -->
+            <p><strong>Envoyez le montant via Mvola au numéro : (+261384509253)</strong></p><br>
+
+            <!-- Adresse email du client -->
+            <label for="email-commande"><strong>Votre adresse email :</strong></label><br>
+            <input type="email" id="email-commande" name="email" placeholder="Entrez votre email" required><br><br>
+
+            <!-- Numéro de téléphone du client -->
+            <label for="phone"><strong>Votre numéro de téléphone :</strong></label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required><br><br>
+
+            <!-- Téléchargement de la capture d'écran -->
+            <label for="photo"><strong>Téléchargez une capture d'écran de votre transfert :</strong></label><br>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br>
+            <p class="instructions"><strong>
+              Info: 1 kilogramme de Vanille coûte :20000 Ar, alors, veuillez bien enregistrer une capture d'écran qui vérifie votre transfert via Mvola.</strong></p><br>
+
+            <button type="submit" class="submit-button">Soumettre la commande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contactez-nous : <strong>jeanmichelandrea157@gmail.com</strong></p>
+        <p>Vanil'art. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+<!-- À propos du site -->
+<section class="about-section">
+    <h2><strong>À propos de Vanil'art</strong></h2>
+    <p>Vanil'art est une entreprise de vanille située à Tsiadana depuis 2019. En alliance avec les cultivateurs de vanille de SAVA, nous sommes réputés pour la qualité de nos produits et de notre service.</p>
+</section>
+
+<!-- À propos du développeur -->
+<section class="developer-section">
+    <h2><strong>À propos du développeur</strong></h2>
+    <p>Ce site a été créé par : Jean Michel A. Rakotondrafara. Un jeune talentueux Malagasy, sortant de BIT Tsiadana. Il a pris la deuxième place en créativité au prix Nobel de l'Oracle. Depuis l'année 2020, on n'a plus entendu de nouvelles de lui.</p>
+    <p>Ce site est une de ses œuvres...</p>
+</section>
+    
+    </div>
+</section>
+
+<!-- Réseaux sociaux -->
+<footer>
+    <p>Contactez-nous : <strong>jeanmichelandrea157@gmail.com</strong></p>
+    
+        </a>
+    </p>
+</footer>
+</a>
+    </p>
+    <p>
+        Recherchez notre page : 
+        <a href="https://www.vanil'art.com" target="_blank">www.Vanil'art.com</a>
+    </p>
+</footer>
